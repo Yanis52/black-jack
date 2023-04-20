@@ -1,0 +1,84 @@
+\documentclass[french,12pt]{article}
+\usepackage{babel}
+
+\usepackage[utf8]{inputenc}%encodage des caractères
+\usepackage[T1]{fontenc}%encodage de la police
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage[linesnumbered,ruled,french,onelanguage]{algorithm2e} 
+\setlength{\parindent}{0pt} 
+
+\title{Rapport Méthode de Conception}
+\author{Antonin Montagne, Lou-Anne Gautherie, Nathan Sakkriou, \\
+Yanis Habarek}
+\date{25 Novembre 2022}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.4]{img/fond.png}	
+	\end{center}
+\end{figure}
+
+\begin{figure}[b]
+	\begin{center}
+		\includegraphics[scale=0.7]{img/unicaen.png}	
+	\end{center}
+\end{figure}
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\subsection{Plan du rapport}
+
+Nous évoquerons d'abord quels étaient nos objectifs de départ (\ref{objectifs}), puis nous détaillerons les différentes étapes de la création de notre projet avec les rôles de chacuns (\ref{organisation}). Ensuite nous présenterons les éléments techniques utilisées (\ref{elemtech}) dans notre code, ainsi que l'achitecture de ce projet (\ref{architecture}). Finalement nous présenterons certaines expérimentations (\ref{experimentations}) et terminerons par une courte conclusion (\ref{conclusion}).
+
+\subsection{Objectifs du projet} \label{objectifs}
+
+Nous avions pour but de créer un jeu de Blackjack. Certaines contraintes nous étaient données :
+\begin{itemize}
+	\item Respecter la forme MVC.
+	\item Créer une dépendance entre une librairie "\texttt{cartes}" et un jeu "\texttt{blackjack}".	
+\end{itemize}
+
+\section{Fonctionnalités implémentées} \label{organisation}
+
+\subsection{Description des fonctionnalités}
+
+A partir de l'accueil, il est d'abord possible de vérifier les règles du blackjack en cliquant sur le bouton "\textsc{règles du jeu}". \\
+Le clic du bouton renverra le joueur sur le site \textit{guide-blackjack.com/regles-du-black-jack.html}, qui contient les règles de ce jeu. \\\\
+Il est aussi proposé de lancer une partie à l'aide du bouton "\textsc{nouvelle partie}". \\
+Le clic du bouton ouvrira un formulaire qui demandera à l'utilisateur, combien de joueur veut-il rentrer pour cette partie. Une fois le nombre de joueur rentré, le jeu se lancera après avoir cliqué sur "\textsc{Commencer}". Le joueur commencera la partie, il peut soit tirer une carte, soit ne rien faire (boutons  "\textsc{Hit}" et "\textsc{Stop}"). Si il choisit de ne rien faire, le tour passe au croupier. Le plus proche de 21 sans dépasser gagne la partie. Une fois la partie terminée, une fenêtre pop-up avec le nom de celui qui a gagné et un bouton "\textsc{OK}" qui renverra le joueur sur la page d'accueil.\\\\
+Depuis l'accueil, il est finalement possible de fermer la fenêtre en appuyant sur "\textsc{Cliquer}". 
+
+\subsection{Organisation du projet}
+
+\section{Eléments techiniques} \label{elemtech}
+
+\subsection{Paquetages utilisées}
+
+\subsubsection{Paquetages Java}
+
+\subsubsection{Paquetages JAR}
+
+\subsection{Algorithmes utilisés}
+
+\section{Architecture du projet} \label{architecture}
+
+\section{Expérimentations} \label{experimentations}
+
+\section{Conclusion} \label{conclusion}
+
+\end{document}
